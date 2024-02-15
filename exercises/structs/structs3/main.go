@@ -1,14 +1,15 @@
 // structs3
 // Make me compile!
-//
-// I AM NOT DONE
 package main
 
 import "fmt"
 
 type Person struct {
-	firstName string
-	lastName  string
+	firstName, lastName string
+}
+
+func (p Person) FullName() string {
+	return p.firstName + " " + p.lastName
 }
 
 func main() {
